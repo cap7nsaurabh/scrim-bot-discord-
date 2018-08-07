@@ -53,7 +53,7 @@ async def on_message(message):
         else:
             await bot.send_message(message.channel,"count down starting...:smiley: all the best players..")
             vc=bot.voice_client_in(message.server)
-            pl=vc.create_ytdl_player("https://www.youtube.com/watch?v=nyC0c6t7Vq0")
+            pl=vc.create_ytdl_player("https://www.youtube.com/watch?v=nyC0c6t7Vq0",avconv=False)
             pl.start()
         return True
     
