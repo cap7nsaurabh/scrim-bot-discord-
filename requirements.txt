@@ -1,4 +1,3 @@
 discord.py[voice] ~= 0.16.0
 asyncio
-discord.ext
 os
