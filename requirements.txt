@@ -4,3 +4,5 @@ colorlog
 asyncio
 requests
 youtube_dl
+discord.py[voice] ~= 0.16.12
+
