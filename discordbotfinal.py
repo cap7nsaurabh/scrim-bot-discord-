@@ -85,5 +85,5 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-bot.run("NDc2Mjk2NjMyNjI3ODg4MTI4.DkrhfQ.l4zP6IbXjIf61oV1jKx_bLCdweA")
+bot.run(str(os.environ.get('BOT_TOKEN')))
     
