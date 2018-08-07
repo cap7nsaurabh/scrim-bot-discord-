@@ -1,4 +1,4 @@
-discord.py[voice] ~= 0.16.12
+discord.py
 pip
 colorlog
 asyncio
