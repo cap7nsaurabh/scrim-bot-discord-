@@ -7,5 +7,5 @@ requests
 youtube_dl
 PyNaCl
 discord.py[voice] ~= 0.16.12
-https://gitlab.com/amivin/env/raw/master/ffmpeg-release-64bit-static.tar.xz
+
 
