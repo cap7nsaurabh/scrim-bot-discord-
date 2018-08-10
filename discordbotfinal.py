@@ -2,8 +2,18 @@ import discord
 import os
 import youtube_dl
 from discord.ext import commands
-op="libopus.so.1"
-#discord.opus.load_opus(op)
+from discord import opus
+OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll', 'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
+if opus.is_loaded():
+    print("Thank god")
+for opus_lib in opus_libs:
+    try:
+        opus.load_opus(opus_lib)
+        print("ho gya!!")
+    except OSError:
+        pass
+
+raise RuntimeError('Could not load an opus lib. Tried %s' % (', '.join(opus_libs)))
 token="<token goes here>"
 bot = commands.Bot(command_prefix="!")
 @bot.event
