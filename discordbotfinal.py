@@ -1,6 +1,6 @@
 import discord
 import os
-import libopus
+import opuslib
 import youtube_dl
 from discord.ext import commands
 token="<token goes here>"
