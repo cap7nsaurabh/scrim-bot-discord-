@@ -2,7 +2,7 @@ discord.py
 pip
 colorlog
 asyncio
-libopus
+opuslib
 requests
 youtube_dl
 PyNaCl
