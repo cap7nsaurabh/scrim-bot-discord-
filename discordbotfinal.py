@@ -3,7 +3,7 @@ import os
 import youtube_dl
 from discord.ext import commands
 from discord import opus
-OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll', 'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
+opus_libs = ['libopus-0.x86.dll', 'libopus-0.x64.dll', 'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
 if opus.is_loaded():
     print("Thank god")
 for opus_lib in opus_libs:
