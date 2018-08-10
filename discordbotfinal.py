@@ -3,7 +3,7 @@ import os
 import youtube_dl
 from discord.ext import commands
 op="libopus.so.1"
-discord.opus.load_opus(op)
+#discord.opus.load_opus(op)
 token="<token goes here>"
 bot = commands.Bot(command_prefix="!")
 @bot.event
