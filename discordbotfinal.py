@@ -3,17 +3,17 @@ import os
 import youtube_dl
 from discord.ext import commands
 from discord import opus
-opus_libs = ['libopus-0.x86.dll', 'libopus-0.x64.dll', 'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
-if opus.is_loaded():
-    print("Thank god")
-for opus_lib in opus_libs:
-    try:
-        opus.load_opus(opus_lib)
-        print("ho gya!!")
-    except OSError:
-        pass
+#opus_libs = ['libopus-0.x86.dll', 'libopus-0.x64.dll', 'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
+#if opus.is_loaded():
+#    print("Thank god")
+#for opus_lib in opus_libs:
+#    try:
+#        opus.load_opus(opus_lib)
+#        print("ho gya!!")
+#    except OSError:
+#        pass
 
-raise RuntimeError('Could not load an opus lib. Tried %s' % (', '.join(opus_libs)))
+$raise RuntimeError('Could not load an opus lib. Tried %s' % (', '.join(opus_libs)))
 token="<token goes here>"
 bot = commands.Bot(command_prefix="!")
 @bot.event
