@@ -13,7 +13,7 @@ from discord import opus
 #    except OSError:
 #        pass
 
-$raise RuntimeError('Could not load an opus lib. Tried %s' % (', '.join(opus_libs)))
+#$raise RuntimeError('Could not load an opus lib. Tried %s' % (', '.join(opus_libs)))
 token="<token goes here>"
 bot = commands.Bot(command_prefix="!")
 @bot.event
